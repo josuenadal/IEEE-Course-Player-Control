@@ -1,0 +1,33 @@
+{
+  "name": "IEEE Course Keyboard Control",
+  "description": "Control IEEE course player with your keyboard",
+  "manifest_version": 3,
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "josue.nadalrodriguez@gmail.com"
+    }
+  },
+  "background": {
+    "scripts": ["./scripts/player_controller.js"]
+  },
+  "commands": {
+    "seek_backwards": {
+      "suggested_key": {
+        "default": "F1"
+      }
+    },
+    "toggle_play_pause": {
+      "suggested_key": {
+        "default": "F2"
+      }
+    },
+    "seek_forward": {
+      "suggested_key": {
+        "default": "F3"
+      }
+    }
+  },
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"]
+}
