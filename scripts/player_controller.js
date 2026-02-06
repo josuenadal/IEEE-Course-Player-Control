@@ -53,6 +53,8 @@ function seek_back() {
       player.timelineManager.pauseActiveTimeline();
     }
 
+    // Player progress bar is in terms of %
+    // Seeks 7.5% back
     var seek = 0.075;
     var current =
       player.timelineManager.valueOf()._activeTimeline._pausedTime /
@@ -78,6 +80,8 @@ function seek_forward() {
       player.timelineManager.pauseActiveTimeline();
     }
 
+    // Player progress bar is in terms of %
+    // Seeks -5%
     var seek = 0.05;
     var current =
       player.timelineManager.valueOf()._activeTimeline._pausedTime /
